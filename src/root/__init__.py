@@ -28,6 +28,7 @@ def main():
 
 def establish_population(num_blue, num_red):
     population = [BLUE, ] * num_blue + [RED, ] * num_red
+    random.shuffle(population)
     return population
 
 def draw_ten(population):
